@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+	<!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>MyWishList App</title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script
+			src="https://kit.fontawesome.com/542ec66c3f.js"
+			crossorigin="anonymous"
+		></script>
+		<link
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="" />
+	</head>
+	<style>
+		body {
+			background: url("./images/background.jpg") center/cover no-repeat;
+			background-attachment: fixed;
+			height: 100vh;
+			color: #fff;
+		}
+	</style>
+	<body>
+		<div class="container mt-4">
+			<h1 class="display-4 text-center">
+				<i class="fas fa-tree text-success"></i>
+				My<span class="text-success">Wish</span>List
+			</h1>
+			<form action="" id="gift-form" class="mt-5">
+				<div class="form-group">
+					<label for="name">What gift would you like?</label>
+					<input type="text" name="" id="name" class="form-control" />
+				</div>
+				<div class="form-group">
+					<label for="where">Where can it be found?</label>
+					<input type="text" name="" id="where" class="form-control" />
+				</div>
+				<div class="form-group">
+					<label for="price">How much is it?</label>
+					<input type="text" name="" id="price" class="form-control" />
+				</div>
+				<input
+					type="submit"
+					value="Add Gift"
+					class="btn btn-success btn-block border-white"
+				/>
+			</form>
+			<input
+				id="clear-list"
+				value="Clear List"
+				class="btn btn-danger btn-block border-dark mt-3"
+			/>
+			<input
+				id="print"
+				value="Print This Page"
+				class="btn btn-primary btn-block border-dark mt-3"
+			/>
+			<table class="table table-striped mt-5">
+				<thead>
+					<tr class="text-white">
+						<th>Gift</th>
+						<th>Where</th>
+						<th>Price</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody id="gift-list"></tbody>
+			</table>
+		</div>
+
+		<script src="./scripts/app.js"></script>
+	</body>
+</html>
